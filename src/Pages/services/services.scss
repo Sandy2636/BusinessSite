@@ -1,0 +1,59 @@
+.serviceCard {
+  height: 30vh;
+  min-width: 300px;
+  margin-top: 10px;
+  padding-top: 10px;
+  overflow: hidden;
+  font-weight: 200;
+  text-align: center;
+  width: 20vw;
+  background-color: white;
+  color: black;
+  margin: 0 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: -8px 20px 44px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: -8px 20px 44px 10px rgba(0, 0, 0, 0.32);
+  box-shadow: -8px 20px 44px 10px rgba(0, 0, 0, 0.32);
+  .ServiceTitle {
+    font-size: 24px;
+    margin: 20px 5px;
+  }
+  .ServiceDesc {
+    transition: all 15s ease;
+    &:hover {
+      transform: translateY(-70%);
+    }
+  }
+}
+.services {
+  width: 100vw;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 89%
+  );
+  .services-container {
+    margin: 0 15%;
+    h2 {
+      padding-top: 50px;
+      text-align: center;
+      font-size: 50px;
+      border-bottom: 5px solid cyan;
+    }
+    .service__body {
+      display: flex;
+      flex-wrap: wrap;
+      width: 70vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      .service {
+        margin: 20px 1vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../app.scss";
+.about {
+  height: 100vh;
+  background-color: black;
+  .aboutContainer {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      margin: 0 5%;
+    }
+    .aboutCompany {
+      display: flex;
+      height: 40vh;
+      margin: 20px;
+      @include tablet {
+        margin: 5% 10px;
+      }
+      .aboutCompanyInfo {
+        margin: 0 20px;
+        flex: 1;
+        h2 {
+          color: cyan;
+          font-size: 30px;
+          margin: 20px 0;
+        }
+        p {
+          color: gray;
+          font-size: 20px;
+          margin: 20px 20px;
+          @include tablet {
+            margin: 10px;
+            font-size: 16px;
+          }
+        }
+      }
+      .aboutCompanyImg {
+        flex: 1;
+        width: 50%;
+        margin: 0 20px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .aboutCeo {
+      display: flex;
+      .ceo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 50vh;
+        @include tablet {
+          margin-top: -10vh;
+        }
+        .CeoImg {
+          height: 100%;
+          object-fit: contain;
+        }
+        .ceoName {
+          margin: 0 auto;
+          color: white;
+          h3 {
+            color: cyan;
+          }
+        }
+      }
+      .desc {
+        flex: 1;
+        .h2 {
+          margin-top: 20px;
+        }
+        h2 {
+          text-align: right;
+          color: cyan;
+          font-size: 30px;
+        }
+        p {
+          text-align: right;
+          font-size: 20px;
+          margin: 20px 30px;
+          color: gray;
+        }
+      }
+    }
+  }
+}

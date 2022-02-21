@@ -1,0 +1,43 @@
+@import "../../app.scss";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  @include tablet {
+    position: absolute;
+  }
+  .navleft {
+    margin: 20px 5%;
+  }
+  .navRight {
+    display: flex;
+    margin: 0 5%;
+    text-decoration: none;
+    color: black;
+    @include tablet {
+      font-size: 14px;
+    }
+    @include mobile {
+      display: none;
+    }
+    .link {
+      margin: 0 10px;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      &:hover {
+        color: aqua;
+        font-size: 1rem;
+        text-decoration: underline;
+      }
+    }
+  }
+}

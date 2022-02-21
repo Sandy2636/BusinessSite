@@ -1,0 +1,51 @@
+@import "../../app.scss";
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 89%
+  );
+  color: white;
+  .home-quote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-right: 30px;
+    @include tablet {
+      margin-left: 20px;
+      margin-top: 20vh;
+      justify-content: center;
+    }
+
+    hr {
+      width: 10px;
+      height: 40%;
+      background-color: cyan;
+      border: none;
+      margin: 0 20px;
+    }
+    .quote-container {
+      width: 40%;
+      min-width: 300px;
+      font-size: 1rem;
+      @include tablet {
+        font-size: 13px;
+        justify-content: left;
+      }
+    }
+    .videoContainer {
+      height: 40vh;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+}
