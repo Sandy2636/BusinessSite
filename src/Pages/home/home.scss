@@ -1,7 +1,6 @@
 @import "../../app.scss";
 .home {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
   background: rgb(0, 0, 0);
@@ -11,6 +10,9 @@
     rgba(0, 255, 255, 1) 75%,
     rgba(255, 255, 255, 1) 89%
   );
+  @include mobile {
+    width: 100vw;
+  }
   color: white;
   .home-quote {
     display: flex;
@@ -41,11 +43,20 @@
         font-size: 13px;
         justify-content: left;
       }
+      @include mobile {
+        font-size: 11px;
+      }
     }
     .videoContainer {
       height: 40vh;
       overflow: hidden;
       object-fit: cover;
+      @include mobile {
+        iframe {
+          width: 290px;
+          height: fit-content;
+        }
+      }
     }
   }
 }

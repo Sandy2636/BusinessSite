@@ -5,6 +5,7 @@
 }
 @mixin mobile {
   @media (max-width: 480px) {
+    overflow-x: hidden;
     @content;
   }
 }
