@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <p>Business Promoz | All rights reserved.</p>
-      <p>Business Point by Sandy</p>
+      <p>Made By Sandy</p>
     </div>
   );
 }

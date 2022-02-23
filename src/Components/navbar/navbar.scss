@@ -16,6 +16,10 @@
   }
   .navleft {
     margin: 20px 5%;
+    img {
+      height: 50px;
+      object-fit: contain;
+    }
   }
   .navRight {
     display: flex;

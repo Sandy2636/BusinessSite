@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../Components/navbar/Navbar";
 import "./home.scss";
+import Video from "../../img/homeVideo.mp4";
 function Home() {
   return (
     <div id="home" className="home">
@@ -15,13 +16,16 @@ function Home() {
           </h1>
         </div>
         <div className="videoContainer">
-          <iframe
+          {/* <iframe
             src="https://player.vimeo.com/video/677438996?h=6eec8d3da5"
             width="500"
             height="300"
             frameborder="0"
             allow="autoplay;"
-          ></iframe>
+          ></iframe> */}
+          <video controls autoPlay muted>
+            <source src={Video} />
+          </video>
         </div>
       </div>
     </div>

@@ -29,15 +29,21 @@ function Contact() {
       );
   };
   return (
-    <div className="c">
+    <div className="c" id="contact">
       <div className="c-bg" />
       <div className="c-wrapper">
         <div className="c-left">
           <h1 className="c-title">Let's discuss your project.</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
-              +91 9599312363
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt=""
+                className="c-icon"
+              />
+              <a className="link" href="https://wa.me/9599312363">
+                +91 9599312363
+              </a>
             </div>
             <div className="c-info-item">
               <img src={Email} alt="" className="c-icon" />

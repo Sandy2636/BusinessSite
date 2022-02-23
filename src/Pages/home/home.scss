@@ -10,6 +10,9 @@
     rgba(0, 255, 255, 1) 75%,
     rgba(255, 255, 255, 1) 89%
   );
+  @include tablet {
+    width: 100vw;
+  }
   @include mobile {
     width: 100vw;
   }
@@ -51,8 +54,11 @@
       height: 40vh;
       overflow: hidden;
       object-fit: cover;
+      video {
+        height: 100%;
+      }
       @include mobile {
-        iframe {
+        video {
           width: 290px;
           height: fit-content;
         }

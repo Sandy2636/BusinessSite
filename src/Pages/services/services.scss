@@ -17,8 +17,10 @@
   .ServiceTitle {
     font-size: 24px;
     margin: 20px 5px;
+    color: cyan;
   }
   .ServiceDesc {
+    font-weight: 400;
     transition: all 15s ease;
     &:hover {
       transform: translateY(-70%);

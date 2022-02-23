@@ -73,6 +73,9 @@
           height: 100%;
           object-fit: contain;
           min-width: 300px;
+          @include mobile {
+            padding-top: 40px;
+          }
         }
         .ceoName {
           margin: 0 auto;
